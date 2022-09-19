@@ -10,7 +10,6 @@
 <head>
     <title>Form</title>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resource/style.css"/>
-
 </head>
 <body>
     <form action="process-form3" method="get">

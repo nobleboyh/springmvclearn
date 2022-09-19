@@ -15,5 +15,8 @@
     <h2 class="title">Home Page</h2>
     <hr/>
     <a href="show-form" class="show-form">Open input form</a>
+    <br/>
+    <a href="student/show-form" class="show-form">Open student input form</a>
+
 </body>
 </html>
