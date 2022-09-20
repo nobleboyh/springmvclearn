@@ -13,5 +13,6 @@
 <body>
   <h1>Hello customer ${customer.firstName} ${customer.lastName}</h1>
 <div>Your free passes: ${customer.freePasses}</div>
+<div>Your course code: ${customer.course}</div>
 </body>
 </html>

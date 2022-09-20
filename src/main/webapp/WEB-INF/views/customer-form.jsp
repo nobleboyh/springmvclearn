@@ -18,12 +18,20 @@
   <label for="first-name">First name: </label>
   <form:input id="first-name" path="firstName"/>
   <form:errors path="firstName" cssClass="error"/>
+
   <label for="last-name">Last name: </label>
   <form:input id="last-name" path="lastName"/>
   <form:errors path="lastName" cssClass="error"/>
+
   <label for="free-passes">Free passes: </label>
   <form:input id="free-passes" path="freePasses"/>
   <form:errors path="freePasses" cssClass="error"/>
+
+  <label for="course-code">Course code: </label>
+  <form:input id="course-code" path="course"/>
+  <form:errors path="course" cssClass="error"/>
+
+  <!--Submit-->
   <form:button type="submit">Submit</form:button>
 </form:form>
 </body>

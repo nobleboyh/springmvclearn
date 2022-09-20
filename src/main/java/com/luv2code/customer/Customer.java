@@ -1,6 +1,7 @@
 package com.luv2code.customer;
 
 
+import com.luv2code.customer.helpers.CourseCode;
 import org.springframework.format.annotation.NumberFormat;
 
 import javax.validation.constraints.Max;
@@ -12,6 +13,7 @@ public class Customer {
     @NotNull(message = "First name is required field")
     @Size(min = 1, message = "First name is required field")
     private String firstName;
+
     @NotNull(message = "Last name is required field")
     @Size(min = 1, message = "Last name is required field")
     private String lastName;
@@ -20,12 +22,10 @@ public class Customer {
     @Min(value = 0, message = "not smaller than 0")
     @NotNull
     private Integer freePasses;
-    public Customer() {
-    }
 
-    public Customer(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    @CourseCode(value = "COU", message = "Course code must be started with COU")
+    private String course;
+    public Customer() {
     }
 
     public String getFirstName() {
@@ -50,5 +50,13 @@ public class Customer {
 
     public void setFreePasses(Integer freePasses) {
         this.freePasses = freePasses;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
     }
 }
