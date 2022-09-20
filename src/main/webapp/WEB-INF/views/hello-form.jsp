@@ -12,7 +12,7 @@
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resource/style.css"/>
 </head>
 <body>
-    <form action="process-form3" method="get">
+    <form action="process-form3" method="get" class="form-info">
         <label for="name">Input name: </label>
         <input id="name" name="name" type="text"/>
         <button type="submit">Submit</button>

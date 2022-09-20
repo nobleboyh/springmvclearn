@@ -10,9 +10,10 @@
 <html>
 <head>
     <title>Student Input Form</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resource/style.css"/>
 </head>
 <body>
-    <form:form modelAttribute="student" action="process-form">
+    <form:form modelAttribute="student" action="process-form" cssClass="form-info">
         <label for="first-name">First name: </label>
         <form:input id="first-name" path="firstName"/>
         <label for="last-name">Last name: </label>

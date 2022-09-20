@@ -17,6 +17,8 @@
     <a href="show-form" class="show-form">Open input form</a>
     <br/>
     <a href="student/show-form" class="show-form">Open student input form</a>
+    <br/>
+    <a href="customer/" class="show-form">Open customer input form</a>
 
 </body>
 </html>
