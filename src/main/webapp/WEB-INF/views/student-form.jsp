@@ -20,6 +20,16 @@
         <form:select path="country">
             <form:options items="${student.countryList}"/>
         </form:select>
+        <span>Choose your favorite language: </span>
+        <form:radiobutton path="favoriteLanguage" value="C#" />C#
+        <form:radiobutton path="favoriteLanguage" value="Java"/>Java
+        <form:radiobutton path="favoriteLanguage" value="JS"/>JS
+
+        <p>Choose your OS: </p>
+        <form:checkbox path="operationSystems" value="Windows"/> Windows
+        <form:checkbox path="operationSystems" value="MacOS"/> MacOS
+        <form:checkbox path="operationSystems" value="Ubuntu"/> Ubuntu
+
         <form:button type="submit">Submit</form:button>
     </form:form>
 </body>
